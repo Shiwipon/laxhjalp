@@ -99,5 +99,8 @@ h1:first-letter {
 }
 
 
-.test {
-	border
+
+/* Kod till uppgift 11C för Om-Oss sidan */
+.startpage > header, .subpage > header {
+	text-align: center;
+}
