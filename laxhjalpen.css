@@ -111,3 +111,7 @@ h1:first-letter {
 	width: 20%;
 	display: inline; /* IE 6 buggfix */
 }
+
+div[role="main"] {
+	margin-left:25%;
+}
