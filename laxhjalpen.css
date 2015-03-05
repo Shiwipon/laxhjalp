@@ -115,3 +115,15 @@ h1:first-letter {
 div[role="main"] {
 	margin-left:25%;
 }
+
+div[role="main"] > article {
+	display:block;			/* Till äldre webbläsare */
+	padding-bottom: 1em; /* Sista p-elementet bidrar med 1em till. */
+	margin-bottom: 2em;
+	border-bottom: 3px double #00af64;
+}
+
+div[role="main"] > article:last-child; {
+	border-bottom: none;
+	margin-bottom: 0;
+}
