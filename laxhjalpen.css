@@ -29,7 +29,8 @@ footer {
 	margin-right: 10px;
 }
 
-.startpage h1 {
+.startpage h1,
+.subpage h1 /* I added this in 11.3 because it bothered me not to have the header text large. */ {
 	font-size:  500%;  		/* Massiv rubrik på startsidan */
 	vertical-align: 53%;
 }
@@ -80,7 +81,7 @@ h1:first-letter {
 	box-shadow: inset 0 0 20px #007241;
 	border-radius: 50%;
 
-}   								/* This is and ending tag.*/
+}   								
 
 /* Menu link grejer */
 .menu a:link,
@@ -100,7 +101,13 @@ h1:first-letter {
 
 
 
-/* Kod till uppgift 11C för Om-Oss sidan */
+/* Kod till Om-Oss sidan */
 .startpage > header, .subpage > header {
 	text-align: center;
+}
+
+.subpage > nav {
+	float: left;
+	width: 20%;
+	display: inline; /* IE 6 buggfix */
 }
