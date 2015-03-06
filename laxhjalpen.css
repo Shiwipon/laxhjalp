@@ -217,6 +217,23 @@ table td,
 table th {
 	/* outline: 1px solid red;		 Provisorisk */
 	border: 1px solid black;
-	border-spacing: 2px 2px; /*Sir, I'm gonna have to ask you to step away from your border.. */
-	
+	border-collapse: collapse;
+	border-spacing: 2px 3px; /*Sir, I'm gonna have to ask you to step away from your border.. */
+	vertical-align: top;
+}
+
+tr {
+	-webkit-transition: background-color 2s; /* Safari 5-6 */
+	 	-moz-transition: background-color 2s; /* Firefox < 15 */
+			-ms-transition: background-color 2s; /* För symmetrins skull */
+			   -o-transition: background-color 2s; /* Opera < 12.1 */
+				   transition: background-color 2s; 
+}
+
+tr:target {
+	background-color: #61d7a4;
+}
+
+tr:hover {
+	background-color: #ff9b73;
 }
