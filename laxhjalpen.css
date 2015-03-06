@@ -142,5 +142,14 @@ div[role="main"] > article:last-child; {
 
 .block > p:first-of-type {
 	margin-top: 0;
+}
 
+footer {
+	clear: both;  /* Clears the previous float settings. Establishes a new 'top line' that will not allow any content to be posted above the line.  */
+}
+
+.subpage > footer {
+	margin-top: 0;
+	padding: 1.5em;
+	border-top: 3px double #00AF64;
 }
