@@ -130,6 +130,27 @@ div[role="main"] > article:last-child; {
 	margin-bottom: 0;
 }
 
+div[role="main"] figure > img {
+	width: 128px;
+	height: 128px;
+}
+
+.bildcaption {
+	font: italic bolder 110% sans-serif;
+	font-family: inherit; /* Återställer efter shorthand ??? */
+	text-align: center;
+	text-transform: uppercase; /* VERSALER / CAPS */
+	color: 666;
+	margin-bottom:  1em; /* Samma som p till höger */
+}
+
+/* För användning på fler ställen */
+.double {
+	border: 1px solid #ccc;
+	padding: 5px;
+}
+
+
 .alignleft {
 	float:left;
 	margin: 0 10px 15px 0;
@@ -153,3 +174,4 @@ footer {
 	padding: 1.5em;
 	border-top: 3px double #00AF64;
 }
+
