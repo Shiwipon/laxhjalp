@@ -211,3 +211,8 @@ footer {
 	border-top: 3px double #00AF64;
 }
 
+/* Kod till Arbeten */
+table {
+	outline: 1px solid red;		/* Provisorisk */
+	border: 1px solid black;
+}
