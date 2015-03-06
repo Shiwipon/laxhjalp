@@ -212,7 +212,11 @@ footer {
 }
 
 /* Kod till Arbeten */
-table {
-	outline: 1px solid red;		/* Provisorisk */
+table,
+table td,
+table th {
+	/* outline: 1px solid red;		 Provisorisk */
 	border: 1px solid black;
+	border-spacing: 2px 2px; /*Sir, I'm gonna have to ask you to step away from your border.. */
+	
 }
