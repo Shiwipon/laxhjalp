@@ -121,6 +121,8 @@ div[role="main"] > article {
 	padding-bottom: 1em; /* Sista p-elementet bidrar med 1em till. */
 	margin-bottom: 2em;
 	border-bottom: 3px double #00af64;
+	width:100%;
+	float:right; /* Floated to contain other floated content - Set a float to fix a float. */ 
 }
 
 div[role="main"] > article:last-child; {
