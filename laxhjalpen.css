@@ -271,3 +271,16 @@ tr:target {
 tr:hover {
 	background-color: #ff9b73;
 }
+
+td:nth-child(1) {
+	/* Första kolumnen */
+	width: 50px;
+	text-align:left;
+}
+
+td:nth-child(2) {
+	/* Andra kolumnen */
+	width: 50px;
+	text-align: right;
+	font-family: Consolas, "Lucida Console", Monaco, monospace;
+}
