@@ -8,10 +8,6 @@ body {
     font-size: 100%;			/*Startvärde*/
 }
 
-section, header, footer {
-	outline: 1px solid red;		/* Provisorisk */
-}
-
 header{
 	text-align: center;
 	padding: 20px 0 0;
@@ -29,8 +25,7 @@ footer {
 	margin-right: 10px;
 }
 
-.startpage h1,
-.subpage h1 /* I added this in 11.3 because it bothered me not to have the header text large. */ {
+.startpage h1 {
 	font-size:  500%;  		/* Massiv rubrik på startsidan */
 	vertical-align: 53%;
 }
@@ -49,14 +44,13 @@ footer {
 }
 
 .startpage > section {					/* Var beskrivningstexten står i */
-	display: inline-block;				
-	/* Fast bredd vid sidan av varandra */
+	display: inline-block;				/* Fast bredd vid sidan av varandra */
 	width: 20%;
 	margin-right: 6%;
 	vertical-align: top;
 }
 
-/* This is a section that describes hedgehogs.*/ 
+/* Margin till sista sectionselement.*/ 
 .startpage > section:last-of-type {
 	margin-right: 0px;
 }
@@ -72,11 +66,12 @@ h1:first-letter {
 	color: #00AF64;
 }
 
-.startpage > section > h2 {
+.startpage > section > h2, 
+.menu li{ 									/*Lägger till stilen på menu li, om-oss sidan enligt inlämningsinstruktion D3. Stilen till menu */
 	font-family: 'Merienda One', cursive;
 	margin: 0 0 1em;
 	padding: 2em 0;
-	background-color: #F5F5F5;   /* Mycket jlus grå */
+	background-color: #F5F5F5;   			/* Mycket ljus grå */
 	text-align: center;
 	box-shadow: inset 0 0 20px #007241;
 	border-radius: 50%;
@@ -90,7 +85,7 @@ h1:first-letter {
 	color: #000;
 }
 .menu a:focus,
-.Menu a:hover {
+.menu a:hover {
 	text-decoration: underline;
 	color: #A62F00;
 }
@@ -106,10 +101,21 @@ h1:first-letter {
 	text-align: center;
 }
 
+/* Navigation */
 .subpage > nav {
 	float: left;
 	width: 20%;
 	display: inline; /* IE 6 buggfix */
+}
+
+.subpage > nav > ul {
+	margin: 0;
+	padding: 0;
+}
+
+.subpage > nav > ul > li {
+	display: block;
+	list-style-type: none;
 }
 
 .subpage header a /* Header image link */ {
@@ -167,7 +173,7 @@ div[role="main"] figure > img {
 
 .bildcaption {
 	font: italic bolder 110% sans-serif;
-	font-family: inherit; /* Återställer efter shorthand ??? */
+	font-family: inherit; /* Återställer efter shorthand. */
 	text-align: center;
 	text-transform: uppercase; /* VERSALER / CAPS */
 	color: #666;
