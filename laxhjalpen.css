@@ -112,6 +112,36 @@ h1:first-letter {
 	display: inline; /* IE 6 buggfix */
 }
 
+.subpage header a /* Header image link */ {
+	margin: 0 40px 0 0;
+	width: 172px;
+}
+
+.subpage .logo /* Header image; mindre än originella bilden */ {
+	width: 146px;
+	height: 123px;
+}
+
+.subpage h1 {
+	/* Förutsättning- display: block är redan satt för alla h1 */
+	font-size: 300%;
+	vertical-align: 40px;  /* Linjerar texten ungefär i mitten av bilden */
+	width: 600px; /* Hur mycket utrymme header texten får */
+}
+
+.subpage > header h1 > span {
+	color: #A62F00;  /* Färgen till texten "om oss" */
+}
+
+hr {
+	padding: 0.5em;  /* För att snygga till undersidorna, utan p.tag-line (slogan) men ändå ha samma design. */
+	border-style: double;
+	border-width: 3px;
+	border-color: #00AF64 transparent; /* Ingen kantlinje på sidorna, bara ovan- och undersidan. */
+	margin: 2em 0; /* Margin till ovankanten av linjen under texten/logon */
+
+}
+
 div[role="main"] {
 	margin-left:25%;
 }
