@@ -1,4 +1,4 @@
-@CHARSET "UTF-8";
+@charset "UTF-8";  /* OBS! charset får inte skrivas med versaler enligt W3C! */
 
 /*Globabala regler */
 body {
@@ -155,7 +155,7 @@ div[role="main"] > article {
 	float:right; /* Floated to contain other floated content - Set a float to fix a float. */ 
 }
 
-div[role="main"] > article:last-child; {
+div[role="main"] > article:last-child { /* Vakna! Skriv inte automatisk ; efter : ! */
 	border-bottom: none;
 	margin-bottom: 0;
 }
@@ -170,7 +170,7 @@ div[role="main"] figure > img {
 	font-family: inherit; /* Återställer efter shorthand ??? */
 	text-align: center;
 	text-transform: uppercase; /* VERSALER / CAPS */
-	color: 666;
+	color: #666;
 	margin-bottom:  1em; /* Samma som p till höger */
 }
 
